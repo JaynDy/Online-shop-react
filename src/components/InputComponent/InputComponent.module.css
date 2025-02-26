@@ -1,0 +1,55 @@
+.containerInput {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 0;
+  padding-right: 30px;
+  width: 40%;
+  gap: 10px;
+  @media (max-width: 860px) {
+    width: 100%;
+  }
+}
+.containerInput label {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  color: #243573;
+  padding: 0;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-text-fill-color: #243573 !important;
+}
+input:focus {
+  outline: none;
+}
+.containerInput input {
+  border: none;
+  border-bottom: 1px solid rgb(149, 147, 147);
+  box-shadow: 0px 1px 1px 0px #6e6d6d1a;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  opacity: 0.8;
+  padding: 2px 0 4px;
+  color: #243573;
+}
+
+input::placeholder {
+  color: #243573;
+}
+
+.error {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  color: rgba(255, 86, 32, 1);
+  padding-top: 2px;
+}
+input.inputError {
+  border-bottom: 1px solid rgba(255, 86, 32, 1) !important;
+}

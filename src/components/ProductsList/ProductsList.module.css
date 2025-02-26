@@ -1,0 +1,45 @@
+.producList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 40px;
+  background-color: rgb(237, 232, 232);
+  margin-top: 85px;
+}
+.productCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 18%;
+  height: 405px;
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px 0px #0000001a;
+  border-radius: 8px;
+}
+img.product {
+  width: 100%;
+  height: 65%;
+}
+p.price {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 15px 0;
+}
+img.addToCart {
+  width: 100%;
+  cursor: pointer;
+}
+h2,
+p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
