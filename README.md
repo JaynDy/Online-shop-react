@@ -1,5 +1,7 @@
 # Online shop (react)
 
+Technologies: React + Vite, module.CSS, Redux, JavaScript
+
 The application is a single-page application with routing, built using React and Redux.
 It is designed for managing a shopping cart and placing orders.
 The user fills out two validated forms (formik), where each step is available only after completing the required fields.
