@@ -55,7 +55,7 @@ export const PageContactInformation = ({
         onSubmit={formik.handleSubmit}
       >
         <h1>Contact information</h1>
-        <div className={styles.ItemContainer}>
+        <div className={styles.itemContainer}>
           <div className={styles.form}>
             <div className={styles.informationContainer}>
               <InputComponent

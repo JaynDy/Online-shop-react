@@ -20,7 +20,6 @@ export const InputComponent = ({
       onBlur={handleBlur}
       value={value}
       className={touched && errors ? styles.inputError : ""}
-      // autocomplete="off"
     />
     {touched && errors && <div className={styles.error}>{errors}</div>}
   </div>

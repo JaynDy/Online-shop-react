@@ -56,81 +56,79 @@ export const PageShipmentInformation = ({
 
       <form className={styles.wrapperItem} onSubmit={formik.handleSubmit}>
         <h1>Shipment information</h1>
-        <div className={styles.ItemContainer}>
-          <div className={styles.form}>
-            <div className={styles.informationContainer}>
-              <div className={styles.inputContainer}>
-                <InputComponent
-                  type="text"
-                  name="address"
-                  label="Address (No P. O. Boxes)*"
-                  placeholder="Enter your address"
-                  touched={formik.touched.address}
-                  errors={formik.errors.address}
+        <div className={styles.itemContainer}>
+          <div className={styles.informationContainer}>
+            <div className={styles.inputContainer}>
+              <InputComponent
+                type="text"
+                name="address"
+                label="Address (No P. O. Boxes)*"
+                placeholder="Enter your address"
+                touched={formik.touched.address}
+                errors={formik.errors.address}
+                handleChange={formik.handleChange}
+                handleBlur={formik.handleBlur}
+                value={formik.values.address}
+              />
+
+              <InputComponent
+                type="text"
+                name="apartment"
+                label="Apartment, suite etc. (optional)*"
+                placeholder="Enter your apartment information"
+                touched={formik.touched.apartment}
+                errors={formik.errors.apartment}
+                handleChange={formik.handleChange}
+                handleBlur={formik.handleBlur}
+                value={formik.values.apartment}
+              />
+
+              <InputComponent
+                type="text"
+                name="city"
+                label="City*"
+                placeholder="Enter your city"
+                touched={formik.touched.city}
+                errors={formik.errors.city}
+                handleChange={formik.handleChange}
+                handleBlur={formik.handleBlur}
+                value={formik.values.city}
+              />
+
+              <div className={styles.selectContainer}>
+                <Dropdown
+                  name="countryRegion"
+                  label="Country/Region*"
+                  placeholder="Select your country/region*"
+                  touched={formik.touched.countryRegion}
+                  errors={formik.errors.countryRegion}
                   handleChange={formik.handleChange}
                   handleBlur={formik.handleBlur}
-                  value={formik.values.address}
+                  value={formik.values.countryRegion}
+                />
+
+                <Dropdown
+                  label="State*"
+                  name="state"
+                  placeholder="Select your state"
+                  touched={formik.touched.state}
+                  errors={formik.errors.state}
+                  handleChange={formik.handleChange}
+                  handleBlur={formik.handleBlur}
+                  value={formik.values.state}
                 />
 
                 <InputComponent
                   type="text"
-                  name="apartment"
-                  label="Apartment, suite etc. (optional)*"
-                  placeholder="Enter your apartment information"
-                  touched={formik.touched.apartment}
-                  errors={formik.errors.apartment}
+                  name="zip"
+                  label="ZIP code*"
+                  placeholder="Enter your ZIP code"
+                  touched={formik.touched.zip}
+                  errors={formik.errors.zip}
                   handleChange={formik.handleChange}
                   handleBlur={formik.handleBlur}
-                  value={formik.values.apartment}
+                  value={formik.values.zip}
                 />
-
-                <InputComponent
-                  type="text"
-                  name="city"
-                  label="City*"
-                  placeholder="Enter your city"
-                  touched={formik.touched.city}
-                  errors={formik.errors.city}
-                  handleChange={formik.handleChange}
-                  handleBlur={formik.handleBlur}
-                  value={formik.values.city}
-                />
-
-                <div className={styles.selectContainer}>
-                  <Dropdown
-                    name="countryRegion"
-                    label="Country/Region*"
-                    placeholder="Select your country/region*"
-                    touched={formik.touched.countryRegion}
-                    errors={formik.errors.countryRegion}
-                    handleChange={formik.handleChange}
-                    handleBlur={formik.handleBlur}
-                    value={formik.values.countryRegion}
-                  />
-
-                  <Dropdown
-                    label="State*"
-                    name="state"
-                    placeholder="Select your state"
-                    touched={formik.touched.state}
-                    errors={formik.errors.state}
-                    handleChange={formik.handleChange}
-                    handleBlur={formik.handleBlur}
-                    value={formik.values.state}
-                  />
-
-                  <InputComponent
-                    type="text"
-                    name="zip"
-                    label="ZIP code*"
-                    placeholder="Enter your ZIP code"
-                    touched={formik.touched.zip}
-                    errors={formik.errors.zip}
-                    handleChange={formik.handleChange}
-                    handleBlur={formik.handleBlur}
-                    value={formik.values.zip}
-                  />
-                </div>
               </div>
             </div>
           </div>

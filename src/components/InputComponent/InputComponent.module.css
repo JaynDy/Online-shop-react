@@ -4,9 +4,9 @@
   margin: 15px 0 0;
   padding-right: 30px;
   width: 40%;
-  gap: 10px;
-  @media (max-width: 860px) {
+  @media (max-width: 1160px) {
     width: 100%;
+    padding: 0;
   }
 }
 .containerInput label {

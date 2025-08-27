@@ -28,13 +28,13 @@ export const PageCart = ({
 
       <div className={styles.wrapperItem}>
         <h1>Cart</h1>
-        <div className={styles.ItemContainer}>
+        <div className={styles.itemContainer}>
           {items.map((item, index) => (
-            <div key={index} className={styles.ItemCart}>
+            <div key={index} className={styles.itemCart}>
               <img
                 src={item.product.images[0]}
                 alt=""
-                className={styles.ItemCardsImage}
+                className={styles.itemCardsImage}
               />
               <div className={styles.aboutItemCart}>
                 <div className={styles.wrapperDescription}>

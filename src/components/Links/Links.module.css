@@ -8,17 +8,29 @@ nav ul {
   display: flex;
   list-style: none;
   width: 70%;
-  @media (max-width: 620px) {
+  @media (max-width: 650px) {
+    width: 100%;
+    padding: 10px;
+  }
+  @media (max-width: 350px) {
     flex-direction: column;
   }
 }
 nav ul li {
   list-style: none;
   margin-right: 20px;
+  white-space: nowrap;
+  @media (max-width: 620px) {
+    margin-right: 10px;
+    font-size: 14px;
+  }
 }
 nav ul li:not(:last-child)::after {
   content: " > ";
   margin-left: 20px;
+  @media (max-width: 620px) {
+    margin-left: 10px;
+  }
 }
 nav ul li a {
   text-decoration: none;

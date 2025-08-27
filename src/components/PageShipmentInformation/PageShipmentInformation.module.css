@@ -8,23 +8,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
-h1 {
-  font-family: Inter;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 38.73px;
-  color: rgba(36, 53, 115, 1);
-  margin: 20px 0;
-  width: 70%;
-}
-.ItemContainer {
+.itemContainer {
   display: flex;
   background-color: #ffffff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   margin: 0px auto;
   width: 70%;
+  @media (max-width: 1160px) {
+    display: block;
+  }
+  @media (max-width: 650px) {
+    width: 100%;
+  }
 }
 .informationContainer {
   display: flex;
@@ -33,11 +31,11 @@ h1 {
 }
 .inputContainer {
   margin-top: 10px;
+  width: 100%;
 }
 .selectContainer {
   display: flex;
-  align-items: center;
-  @media (max-width: 1150px) {
+  @media (max-width: 1160px) {
     flex-direction: column;
   }
 }
