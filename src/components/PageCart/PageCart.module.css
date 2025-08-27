@@ -114,6 +114,9 @@ span {
   font-family: Inter;
   font-size: 24px;
   font-weight: 400;
+  @media (max-width: 450px) {
+    font-size: 18px;
+  }
 }
 .containerTotalQuantity {
   width: 70%;
